@@ -27,7 +27,13 @@ public class DataHora {
         Instant instantZulu = Instant.parse("2023-12-18T05:52:33-03:00");
         System.out.printf("InstantZulu- %s\n", instantZulu); // soma ou subtração da hora
 
+        System.out.println("--------------------------------------");
 
+        // Maneira customizada "Formatter = formatada"
+        LocalDate custom01 = LocalDate.parse("18-12-2023", DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+        System.out.printf("Teste de customização- %s\n",custom01);
+        LocalDateTime custom02 = LocalDateTime.parse("18-12-2023 06:01", DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm"));
+        System.out.printf("Teste de customização- %s\n",custom02);
 
     }
 }
