@@ -35,5 +35,13 @@ public class DataHora {
         LocalDateTime custom02 = LocalDateTime.parse("18-12-2023 06:01", DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm"));
         System.out.printf("Teste de customização- %s\n",custom02);
 
+        System.out.println("--------------------------------------");
+
+        // Instanciação com construtores
+        LocalDate localDate03 = LocalDate.of(2023, 12, 18);
+        System.out.println("Instaciação com construtores- " + localDate03);
+        LocalDateTime localDateTime03 = LocalDateTime.of(2023, 12, 18, 06, 06);
+        System.out.println("Instaciação com construtores- " + localDateTime03);
+
     }
 }
