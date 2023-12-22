@@ -35,7 +35,7 @@ public class P06 {
 
         ZonedDateTime newYork = ZonedDateTime.now(ZoneId.of("America/New_York"));
         LocalDateTime local = LocalDateTime.now();
-        long horarioDiferenca = ChronoUnit.HOURS.between(local, newYork);
+        long horarioDiferenca = ChronoUnit.HOURS.between(local, newYork );
         System.out.println(horarioDiferenca);
 
 
